@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Training Courses</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+      margin: 10px 0;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Available Training</h1>
+
+  <a href="pgcx/">Providing a Great Customer Experience</a>
+
+</body>
+</html>
+
