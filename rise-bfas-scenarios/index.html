@@ -1,1 +1,86 @@
+<!doctype html>
+<!-- 
+course package version: w6K35CYb
+rise_frontend sha: 316de42683d9b945cf337ff2119e18a633afa2ee
+ai_scenario sha: 14dfb0e8133bf274f5d03d215dad556eda33cfa6
+learn_distribution_frontend sha: 8fddd2f56528f29818193d9cc1c8115b83bb6966
+mondrian sha: fa417a2320152115d62ca9bc5167b483b998a2f2
+sandbox sha: 42753f3391b109fa3788c525c22880445ab48325
+ -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Scenario Sample: Recognizing Common Shelter Illnesses in Dogs</title>
 
+    <script>
+      // Force the Rise player to open directly on the Summary lesson,
+      // which is where this scenario activity lives.
+      if (location.hash.indexOf('#/lessons/') !== 0) {
+        location.hash = '#/lessons/JuGd9Lf-au0w8loqeFWuC00IhACK-Ouq';
+      }
+    </script>
+
+    <script type="application/json" id="__CONFIG__">
+      {"remoteManifest":{"ai_scenario":{".js":["ai-scenario/entry.js"]},"learn_distribution_frontend":{".js":["learn_dist/entry.js"]},"mondrian":{".js":["mondrian/entry.js"]}},"assetTargetPrefixes":{"media":"assets","font":"lib/fonts"},"loadOnlyInLms":false}
+    </script>
+
+    <style>
+      /* Isolate just the scenario activity from the rest of the Rise course
+         chrome (sidebar nav, lesson header, other blocks, prev/next nav).
+         Nothing about the scenario block itself is restyled here — this
+         only hides surrounding course shell so the scenario is the page. */
+      .nav-sidebar,
+      .nav-control__button,
+      .lesson-header-wrap,
+      .navButtonsFull__navPrev,
+      .navButtonsFull__navNext {
+        display: none !important;
+      }
+      .page-wrap {
+        margin-left: 0 !important;
+      }
+      .page__wrapper {
+        min-height: 0 !important;
+      }
+      .blocks-lesson > .noOutline {
+        display: none !important;
+      }
+      .blocks-lesson > .noOutline.keep-visible {
+        display: block !important;
+      }
+      body {
+        background: #fff;
+      }
+    </style>
+
+    <script src="lib/dist/8f089cd2.js"></script>
+  </head>
+  <body>
+    <div id="app"></div>
+
+      <script src="lib/rise/b6c62258.js"></script>
+
+    <script>
+      // Once the Rise player has rendered the scenario block, tag its
+      // wrapper so the CSS above can show only that block among its
+      // siblings. Everything inside the scenario itself is untouched --
+      // this only affects which blocks are visible on the page.
+      (function () {
+        var tagged = false;
+        function tagScenarioWrapper() {
+          if (tagged) return;
+          var scenario = document.querySelector('.scenario-block');
+          if (!scenario) return;
+          var wrapper = scenario.closest('.blocks-lesson > .noOutline');
+          if (!wrapper) return;
+          wrapper.classList.add('keep-visible');
+          tagged = true;
+        }
+        var observer = new MutationObserver(tagScenarioWrapper);
+        observer.observe(document.body, { childList: true, subtree: true });
+        tagScenarioWrapper();
+      })();
+    </script>
+  </body>
+</html>
